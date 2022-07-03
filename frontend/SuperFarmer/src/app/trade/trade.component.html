@@ -1,0 +1,11 @@
+
+<table>
+    <tr *ngIf="this.api.trade == true">
+        <td><button *ngIf="this.api.rabbits >= 6" (click) = trade(1)><h5>1 sheep for 6 rabbits</h5></button></td>
+        <td><button *ngIf="this.api.sheeps >= 2" (click) = trade(2)><h5>1 pig for 2 sheeps</h5></button></td>
+        <td><button *ngIf="this.api.pigs >= 3" (click) = trade(3)><h5>1 cow for 3 pigs</h5></button></td>
+        <td><button *ngIf="this.api.cows >= 2"(click) = trade(4)><h5>1 horse for 2 cows</h5></button></td>
+        <td><button *ngIf="this.api.sheeps >= 1"(click) = trade(5)><h5>1 small dog for 1 sheep</h5></button></td>
+        <td><button *ngIf="this.api.cows >= 1" (click) = trade(6)><h5>1 large dog for 1 cow</h5></button></td>
+    </tr>
+  </table> 

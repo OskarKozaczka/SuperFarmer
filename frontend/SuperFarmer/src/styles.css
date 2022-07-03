@@ -1,0 +1,10 @@
+body{margin: 0px;}
+.bg{
+    background-image: url(/assets/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    opacity: 1;
+}
+

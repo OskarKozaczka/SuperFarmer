@@ -1,0 +1,6 @@
+<h3 *ngIf="this.api.currentPlayer != ''">{{this.api.currentPlayer}} is now playing</h3>
+<h3 *ngIf="this.api.currentPlayer == ''">Waiting for current player</h3>
+
+<button (click)="Roll()" style="background: url(/assets/images/dices-svgrepo-com.svg)"></button>
+<h3 *ngIf="firstRoll != ''">You rolled {{firstRoll}} and {{secondRoll}}</h3>
+<h3 *ngIf="firstRoll == ''">Waiting for the first roll</h3>
