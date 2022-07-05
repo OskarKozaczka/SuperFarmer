@@ -100,7 +100,7 @@ export class ApiService {
   UpdateCurrentPlayer(){
     if (this.playerName == '') return
     var url = this.URL + "GetCurrentPlayer/"+this.gameID;
-    this.http.get<string>(url).subscribe({
+    this.http.get(url, {responseType: 'text'}).subscribe({
       next: (x) => {       
         this.currentPlayer = x;
       },
