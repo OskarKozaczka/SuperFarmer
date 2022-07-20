@@ -2,18 +2,18 @@
 {
     public class GreenDice : IDice
     {
+        List<int> possibilities = new List<int>() { 0, 0, 0, 0, 0, 0, 1, 1, 1, 2, 3, 5 };
         public animals Get(int roll)
         {
-            var possibilities = new List<int>() { 0, 0, 0, 0, 0, 0, 1, 1, 1, 2, 3, 5 };
             return (animals)possibilities[roll];
         }
     }
 
     public class RedDice : IDice
     {
+        List<int> possibilities = new List<int>() { 0, 0, 0, 0, 0, 0, 1, 1, 2, 2, 4, 6 };
         public animals Get(int roll)
         {
-            var possibilities = new List<int>() { 0, 0, 0, 0, 0, 0, 1, 1, 2, 2, 4, 6 };
             return (animals)possibilities[roll];
         }
     }

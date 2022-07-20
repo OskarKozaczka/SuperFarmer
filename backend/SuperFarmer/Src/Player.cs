@@ -15,7 +15,7 @@
         {
             foreach (var animal in new animals[] { animals.rabbit, animals.sheep, animals.pig, animals.cow, animals.horse })
             {
-                if (animal == 0) return false;
+                if (playerAnimals.GetAnimal((int)animal) == 0) return false;
             }
             return true;
         }
